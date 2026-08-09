@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Trendyol Clone 🛍️
 
-## Getting Started
+Modern web teknolojileri kullanılarak geliştirilmiş, popüler e-ticaret platformu Trendyol'un kullanıcı arayüzü (UI) klonudur. Proje, hem mobil hem de masaüstü cihazlar için özel olarak tasarlanmış responsive (duyarlı) bir yapıya sahiptir.
 
-First, run the development server:
+## 🚀 Teknolojiler
+- **Next.js (App Router)** - SSR ve Routing altyapısı
+- **React** - Kullanıcı arayüzü bileşenleri
+- **Tailwind CSS** - Hızlı ve modern stillendirme
+- **React Icons** - Arayüz ikonları
+
+## ✨ Özellikler
+- **Cihaza Özel Render (Device Detection):** Kullanıcının cihazına (Mobil / Masaüstü) göre CSS Breakpoint'leri yerine tamamen farklı ve özelleştirilmiş bileşenler (`DesktopProductDetail`, `MobileProductDetail` vb.) sunulur.
+- **Modüler Ürün Detay Sayfası:** Mobil cihazlar için dikey kaydırılabilir esnek yapı, masaüstü cihazlar için bozulmayan ve dar ekranlarda yatay scroll çıkan 3 sütunlu yapı.
+- **Dinamik Header:** Bulunulan sayfaya göre (`usePathname`) değişen koşullu mobil navigasyon çubuğu.
+- **Kapsamlı Filtreleme Arayüzü:** Masaüstünde yan panel, mobilde ise aşağıdan açılır (modal) olarak tasarlanmış filtreleme arayüzü (görsel taslak).
+- **Birebir Tasarım:** Trendyol'un orijinal tasarımına sadık kalınarak oluşturulmuş grid yapıları, kampanyalı rozetler ve satıcı panelleri.
+
+## 📦 Kurulum ve Çalıştırma
+
+Projeyi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyin:
 
 ```bash
+# 1. Bağımlılıkları yükleyin
+npm install
+
+# 2. Geliştirme sunucusunu başlatın
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Sunucu başladıktan sonra tarayıcınızda [http://localhost:3000](http://localhost:3000) adresine giderek projeyi görüntüleyebilirsiniz.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Not: Bu proje Front-End yeteneklerini geliştirmek amacıyla yapılmış bir UI klon çalışmasıdır. Gerçek bir veritabanı veya ödeme sistemi barındırmaz.*
